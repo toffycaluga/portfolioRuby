@@ -14,7 +14,7 @@ class PagesController < ApplicationController
       {
         name:"color game",
         description:"Este código fue creado con JavaScript es un juego simple de adivinanza de colores. El objetivo del juego es emparejar el color mostrado con el cuadro de color correcto",
-        url:"https://github.com/toffycaluga/flujo_ciclos_metodos_III",
+        url:"https://github.com/toffycaluga/colorGame",
         img:"projects/project-2.png",
         iframe_url:"https://toffycaluga.github.io/colorGame/"
       },
