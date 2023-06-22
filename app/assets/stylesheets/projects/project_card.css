@@ -1,0 +1,62 @@
+
+
+.card {
+  --gap: 0.25rem;
+  --position: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  border-radius: 0.5rem;
+  max-width: 18rem;
+}
+.card > :is(button, a) {
+  flex: 1 0 calc(50% - var(--gap));
+  color: hsl(var(--light));
+  background-color: hsl(var(--main-color));
+  border-radius: 0.25rem;
+  padding: 1rem 0.25rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.4;
+}
+.card > :is(button, a):is(:active) {
+  scale: 0.95;
+}
+.card > :is(button, a):is(:hover) {
+  opacity: 0.97;
+}
+.card > :is(button, a):is(:focus-visible) {
+  outline: 2px solid #ff4d4d;
+  outline-offset: 2px;
+}
+.card article {
+  /* background-image: url(https://plus.unsplash.com/premium_photo-1674675647180-451ecf533c5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80); */
+  background-size: cover;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.card h3 {
+  position: absolute;
+  top: var(--position);
+  right: var(--position);
+  margin: 0;
+  color: hsl(var(--dark)/0.9);
+  text-align: end;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+.card .texto {
+  padding: 1rem;
+  transform: translatey(150%);
+  background-color: hsl(var(--dark)/0.5);
+  user-select: none;
+}
+.card:is(:hover, :focus-visible) .texto {
+  transform: translatey(0%);
+  transition: transform 300ms linear;
+}

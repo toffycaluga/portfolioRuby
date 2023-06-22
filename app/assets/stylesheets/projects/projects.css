@@ -1,0 +1,27 @@
+:root {
+    --light: 0 0% 91%;
+    --dark: 0 0% 9%;
+    --main-color: 220 70% 70%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+
+  #projects {
+    min-height: 100svh;
+  }
+  
+  #projects {
+    display: grid;
+    /* place-content: center; */
+    margin: 0;
+    color: hsl(var(--light));
+    /* background-color: hsl(var(--dark)); */
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: monospace;
+  }
