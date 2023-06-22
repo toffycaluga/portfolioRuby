@@ -19,17 +19,6 @@ body{
    background-color:#383838;
    color: #FFFFFF;
 }
-:root {
-   --light: 0 0% 91%;
-   --dark: 0 0% 9%;
-   --main-color: 220 70% 70%;
-   --gap: 0.25rem;
-  --position: 0.5rem;
- }
- 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+main{
+   place-content: center;
 }
-

@@ -13,14 +13,17 @@
 
   #projects {
     min-height: 100svh;
+    /* width: 100%; */
+    
+   /* border: 1px solid #990000; */
   }
   
   #projects {
     display: grid;
-    /* place-content: center; */
-    margin: 0;
+    place-content: center;
+    /* margin: 0; */
     color: hsl(var(--light));
-    /* background-color: hsl(var(--dark)); */
+    background-color: hsl(var(--dark)/.3);
     font-size: 1rem;
     font-weight: 400;
     font-family: monospace;
