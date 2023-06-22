@@ -1,6 +1,6 @@
-<section id="projects" class="container ">
-<h1 class="text-center">Pages#projects</h1>
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
+<section id="projects" class="container">
+<h2 class="text-center">Pages#projects</h2>
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 ">
     <% @projects.each do |project| %>
         <div class="col project-container">
             <%= render 'shared/projects/project_card', project: project %> 

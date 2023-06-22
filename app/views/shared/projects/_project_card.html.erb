@@ -1,13 +1,15 @@
-<div class="card" tabindex="0">
-  <article aria-label="Proyecto">
-    <h3>Proyecto</h3>
+<div class="project-card" tabindex="0">
+  <article aria-label="<%= project[:name]%>">
+    <h3 ><%= project[:name]%></h3>
     <div class="texto">
-      <p aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus quae quisquam, fuga esse, ipsum voluptatum nesciunt rerum similique suscipit culpa nostrum in expedita ipsam, vitae veniam magni harum iste?nostrum in expedita ipsam, vitae veniam magni harum istenostrum in expedita ipsam, vitae veniam magni harum iste</p>
+      <p aria-hidden="true"><%=project[:description]%></p>
     </div>
   </article>
-  <a href="#">
-    Live
-  </a>
+  <% if project[:iframe_url].present? %>
+    <a href="#">
+      Live
+    </a>
+  <% end %>
   <a href="#">
     Repo
   </a>
