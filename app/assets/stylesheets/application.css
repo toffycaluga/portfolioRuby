@@ -14,3 +14,12 @@
  *= require_self
  */
  /* Basic styling */ 
+
+body{
+   background-color:#383838;
+   color: #FFFFFF;
+}
+main{
+   background:url('pattern.png'),opacity:.1 ;
+   background-size: 150px 150px;
+}
