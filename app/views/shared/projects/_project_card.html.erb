@@ -1,5 +1,5 @@
 <div class="project-card" tabindex="0">
-  <article aria-label="<%= project[:name]%>">
+  <article aria-label="<%= project[:name]%>"  style="background-image: url('<%=asset_url(project[:img]) %>');" >
     <h3 ><%= project[:name]%></h3>
     <div class="texto">
       <p aria-hidden="true"><%=project[:description]%></p>
