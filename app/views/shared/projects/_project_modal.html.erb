@@ -3,11 +3,11 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"><%=project[:name]%></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title " id="exampleModalLabel"><%=project[:name]%></h5>
+        <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <iframe src="<%=project[:iframe_url]%>" width="600" height="400"></iframe> 
+        <iframe class="frame"src="<%=project[:iframe_url]%>"></iframe> 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
