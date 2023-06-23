@@ -1,0 +1,16 @@
+<div class="project-card" tabindex="0">
+  <article aria-label="<%= project[:name]%>"  style="background-image: url('<%=asset_url(project[:img]) %>');" >
+    <h3 ><%= project[:name]%></h3>
+    <div class="texto">
+      <p aria-hidden="true"><%=project[:description]%></p>
+    </div>
+  </article>
+  <% if project[:iframe_url].present? %>
+    <a type="button" data-bs-toggle="modal" data-bs-target="#modal<%=project[:id]%>">
+      Live
+    </a>
+  <% end %>
+  <a href="<%= project[:url]%>">
+    Repo
+  </a>
+</div>

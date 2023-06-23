@@ -1,0 +1,66 @@
+
+.project-card {
+  --gap: 0.25rem;
+  --position: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  border-radius: 0.5rem;
+  max-width: 18rem;
+}
+.project-card > :is(button, a) {
+  flex: 1 0 calc(50% - var(--gap));
+  color: hsl(var(--light));
+  background:linear-gradient(to right,rgba(21, 153, 235, 0.987),rgba(93, 172, 222, 0.987));
+  border-radius: 0.25rem;
+  padding: 1rem 0.25rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.4;
+}
+.project-card > :is(button, a):is(:active) {
+  scale: 0.95;
+}
+.project-card > :is(button, a):is(:hover) {
+  opacity: 0.97;
+}
+.project-card > :is(button, a):is(:focus-visible) {
+  outline: 2px solid #ff4d4d;
+  outline-offset: 2px;
+}
+.project-card article {
+  /* background-image: url(https://plus.unsplash.com/premium_photo-1674675647180-451ecf533c5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80); */
+  background-size: cover;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  min-height: 15rem;
+}
+.project-card h3 {
+  position: absolute;
+  top: var(--position);
+  right: var(--position);
+  margin: 0;
+  color: hsl(var(--light)/0.9);
+  background-color: hsl(var(--dark)/0.9);
+  text-align: end;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border-radius: .5rem;
+}
+.project-card .texto {
+  transform: translatey(150%);
+  margin-top: 1.5rem;
+  padding-top: 2.5rem ;
+  background-color: hsl(var(--dark)/0.8);
+  user-select: none;
+  min-height: 15rem;
+}
+.project-card:is(:hover, :focus-visible) .texto {
+  transform: translatey(-5%);
+  transition: transform 300ms linear;
+}
